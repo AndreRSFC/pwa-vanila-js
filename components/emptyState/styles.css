@@ -1,0 +1,16 @@
+.emptyPage {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.emptyPage-image {
+  width: 240px;
+}
+
+.emptyPage-text {
+  font-size: 22px;
+  width: 260px;
+}

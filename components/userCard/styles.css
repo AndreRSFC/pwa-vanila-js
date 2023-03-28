@@ -1,0 +1,50 @@
+.userCard {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #eeeded;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.userCard-name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.userCardImage {
+  border-radius: 50%;
+  width: 42px;
+}
+
+.userCard-content {
+  margin-left: 12px;
+  width: 100%;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  color: #9e9999;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.infos-iconsContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.infos-icons {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.userCard-trash {
+  width: 18px;
+  height: auto;
+  margin-left: 10px;
+}

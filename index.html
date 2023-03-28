@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name="theme-color" content="#222831">
+  <link rel='manifest' href='./manifest.json'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js', {scope: './'})
+    }
+  </script>
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="./components/emptyState/styles.css" rel="stylesheet" type="text/css" />
+  <link href="./components/userCard/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header-title">Contacts</h1>
+    <img class="header-filter" src="./icons/filter.svg"/>
+  </header>
+  <div class="userCard-list"></div>
+  <button class="newUser">
+    + Add new user
+  </button>
+  <div class="formModal">
+    <header class="header">
+      <h1 class="header-title">New User</h1>
+      <img class="header-close" src="./icons/close.svg"/>
+    </header>
+    <form class="formModal-form">
+        <label class="formModal-label" for="user">Name</label>
+        <input class="formModal-input" type="text" id="user" name="name" />
+        <label class="formModal-label" for="description">Description</label>
+        <input class="formModal-input" type="text" id="description" name="description" />
+        <label class="formModal-label" for="phone">Phone</label>
+        <input class="formModal-input" type="phone" id="phone" name="phone"  maxlength="15" />
+        <label class="formModal-label" for="date">Date</label>
+        <input class="formModal-input" type="date" id="date" name="date" />
+        <button class="formModal-button" type="submit">Adcionar usuario</button>
+    </form>
+  </div>
+  <div class="filter">
+    <div class="filter-options">
+      <input type="radio" id="create" name="filter" value="create">
+      <label for="create" checked="checked">Ordem de criação</label><br>
+      <input type="radio" id="crescent" name="filter" value="crescent">
+      <label for="crescent">Ordem crescente A-Z</label><br>  
+      <input type="radio" id="decrescent" name="filter" value="decrescent">
+      <label for="decrescent">Ordem decrescente Z-A</label><br><br>
+      <button class="filter-button" type="submit">Filter</button>
+    </div>
+  </div>
+  <script type="module" src="modal.js"></script>
+  <script src="phoneInput.js"></script>
+</body>
+
+</html>

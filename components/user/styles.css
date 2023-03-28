@@ -1,0 +1,21 @@
+.user {
+    padding: 8px;
+}
+
+.user-highlights {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user-image {
+    border-radius: 50%;
+    width: 64px;
+}
+
+.user-name {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
