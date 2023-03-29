@@ -1,4 +1,4 @@
-import { updateList } from "../../modal.js";
+import { updateList } from "../../index.js";
 
 const userCard = (name, date, phone, description, index, id) => `
     <div class="userCard" data-name="${name}" data-description="${description}" data-date="${date}" data-phone="${phone}" data-index="${index}" data-id="${id}" >
